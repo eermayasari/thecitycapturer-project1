@@ -15,6 +15,7 @@ body {
 
 /* Utility classes */
 .container {
+  padding: 1em;
   max-width: 1120px;
   margin: 5em auto;
 }
@@ -66,8 +67,6 @@ section#perfect-angles-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
   text-align: right;
 }
 
@@ -86,5 +85,30 @@ section#perfect-angles-img {
 section#perfect-angles-img img {
   display: block;
   width: 100%;
+}
+
+/* Media queries */
+@media screen and (max-width: 960px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .item-half {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .item-half#perfect-angles-text {
+    text-align: center;
+    padding: 4em 1em;
+  }
+  .item-half#perfect-angles-title {
+    padding: 3em 1em;
+    font-size: 2rem;
+  }
+  .item-half#perfect-angles-title h1 {
+    line-height: 1;
+  }
 }
 /*# sourceMappingURL=styles-3-4.css.map */
