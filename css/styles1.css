@@ -1,0 +1,55 @@
+body {
+  background-color: #ffd775;
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  color: #3a3a3a;
+  font-family: Oswald, sans-serif;
+  font-size: 4.125rem;
+  line-height: 79px;
+}
+
+h2 {
+  color: #3a3a3a;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.375rem;
+  line-height: 31px;
+}
+
+.logo {
+  margin: 125px auto 75px;
+  width: 200px;
+}
+
+.btn-container {
+  margin-top: 70px;
+}
+
+.btn {
+  background: #3a3a3a;
+  background-image: -webkit-linear-gradient(top, #3a3a3a, #000000);
+  background-image: -moz-linear-gradient(top, #3a3a3a, #000000);
+  background-image: -ms-linear-gradient(top, #3a3a3a, #000000);
+  background-image: -o-linear-gradient(top, #3a3a3a, #000000);
+  background-image: linear-gradient(to bottom, #3a3a3a, #000000);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  font-family: Montserrat, sans-serif;
+  color: #ffd775;
+  font-size: 18px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #000000;
+  background-image: -webkit-linear-gradient(top, #000000, #3a3a3a);
+  background-image: -moz-linear-gradient(top, #000000, #3a3a3a);
+  background-image: -ms-linear-gradient(top, #000000, #3a3a3a);
+  background-image: -o-linear-gradient(top, #000000, #3a3a3a);
+  background-image: linear-gradient(to bottom, #000000, #3a3a3a);
+  text-decoration: none;
+}
