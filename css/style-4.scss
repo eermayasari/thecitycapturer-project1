@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700|Montserrat:300,400');
+$clr-yellow: #FFD775;
+$clr-dark: #3A3A3A;
+$font-oswald: 'Oswald';
+$font-montserrat: 'Montserrat';
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: $font-montserrat, Arial, Helvetica, sans-serif;
+   height: 100%;
+   background: linear-gradient(-45deg, $clr-yellow 50%, $clr-dark 50%);
+}
+
+/* Utility classes */
+.container {
+   padding: 1em;
+   max-width: 1120px;
+   margin: 5em auto;
+}
+.light {
+   background: $clr-yellow;
+}
+.dark {
+   background: $clr-dark;
+}
+/* Misc */
+main#main-content {
+   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.541);
+}
+/* Page styles */
+section#landing {
+   .grid {
+   display: flex;
+   flex-flow: row nowrap;
+   .col-lg {
+      flex-basis: 60%;
+      img {
+         display: block;
+         width: 100%;
+      }
+   }
+   .col-sm {
+      background: 
+      linear-gradient(
+         rgba(0, 0, 0, 0.39), 
+         rgba(0, 0, 0, 0.45)
+       ),
+       /* bottom, image */
+       url('../img/looking.png');
+      background-size: cover;
+      background-position: center;
+      flex-basis: 40%;
+      
+   }
+}
+}
+
+footer#main-footer{
+.grid {
+   display: flex;
+   flex-flow: row nowrap;
+   .row{
+      flex-basis: 50%;
+      padding: 5em;
+      text-align: center;
+      h1 {
+         font-size: 4rem;
+         font-family: $font-oswald;
+         font-weight: 700;
+         text-transform: uppercase;
+         margin-top: .5em;
+      }
+      p {
+         color: $clr-yellow;
+         font-size: 1.5rem;
+         font-weight: 300;
+         line-height: 2;
+         letter-spacing: 2px;
+      }
+   }
+}
+}
+
+/* Media Queries */
+@media screen and (max-width: 960px) {
+   section#landing {
+   .grid {
+      flex-direction: column;
+      .col-lg {
+         flex-basis: 100%;
+      }
+      .col-sm {
+         flex-basis: 100%;
+      }
+   }
+}
+   footer#main-footer{
+      .grid {
+      .row {
+         flex-basis: 100%;
+         overflow: hidden;
+         padding: 4em 2em;
+         h1 {
+            font-size: 2rem;
+         }
+         p{
+            font-size: 1rem;
+            line-height: 1;
+            margin: .75em 0;
+         }
+      }
+   }
+}
+}
+
+@media screen and (max-width: 630px) {
+   footer#main-footer {
+      .grid {
+         flex-direction: column;
+      }
+   }
+}
